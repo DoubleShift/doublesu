@@ -21,7 +21,13 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "lodash": "^4.5.1",
-    "lunr": "^0.6.0"
+    "lunr": "^0.6.0",
+    "hexo-addlink": "~1.0.3",
+
+    "hexo-generator-category": "^0.1.2",
+    "hexo-generator-index": "^0.1.2",
+    "hexo-generator-tag": "^0.1.1",
+    "hexo-renderer-ejs": "^0.1.0"
   },
   "devDependencies": {
     "cssnano": "^3.5.2",
