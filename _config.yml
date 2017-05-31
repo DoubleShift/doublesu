@@ -1,20 +1,65 @@
-title: Hexo
-subtitle: "A fast, simple & powerful blog framework powered by Node.js."
-description: "Hexo is a fast, simple & powerful blog framework powered by Node.js."
-author: Tommy Chen
-language: en
-timezone: UTC
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-url: https://hexo.io
+# Site
+title: 双人份 Blog
+subtitle: 
+description: 
+author: 双人份
+timezone:
+language: default
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://doubles.me/
 root: /
-permalink: news/:year/:month/:day/:title/
-archive_dir: news
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
 code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
 new_post_name: :year-:month-:day-:title.md # File name of new posts
+
 post_asset_folder: true
 per_page: 0
-
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+  
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+  
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
 theme: yilia
+stylus:
+  compress: true
+
 deploy:
   type: git
   repo: git@github.com:hexojs/hexojs.github.io.git
@@ -24,9 +69,10 @@ highlight:
   line_number: false
 
 disqus_shortname: hexojs
-google_analytics: UA-48498357-3
-google_adsense: ca-pub-9461880259118621
-fb_admins: 100000247608790
+google_analytics: 
+google_adsense: 
+fb_admins: 
+
 algolia:
   en:
     api_key: c3d5d4c995b5e0c2ffb5623900279a66
@@ -37,6 +83,14 @@ algolia:
   zh-cn:
     api_key: cdea7d4e47d84f6145b77e7f68689f35
     index_name: hexo_zh-cn
-twitter: hexojs
-weibo: hexojs
-github: hexojs/hexo
+weibo: agmol
+github: DoubleShift
+
+feed:
+  type: atom
+  path: rss.xml
+  limit: 0
+  hub:
+  
+sitemap:
+    path: sitemap.xml
